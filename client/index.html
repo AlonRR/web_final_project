@@ -5,48 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"> -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style_home.css">
     <title>Expence tracker</title>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <a class="navbar" href="#">Home</a>
-            <a class="navbar-brand" href="#">Transaction</a>
-            <a class="nav-overflow" href="#">+</a>
-            <a class="navbar-brand" href="#">Budget</a>
-            <a class="navbar-brand" href="#">Profile</a>
-        </div>
+    <nav>
+        <button class="selected" href="#">
+            <div id="home_icon"></div>
+            Home
+        </button>
+        <button href="#">
+            <div id="transaction_icon"></div>
+            Transaction
+        </button>
+        <button class="plus" href="#">
+            <div>
+                <div id="plus_icon"></div>
+            </div>
+        </button>
+        <button href="#">
+            <div id="budget_icon"></div>Budget
+        </button>
+        <button href="#">
+            <div id="profile_icon"></div>Profile
+        </button>
     </nav>
     <main>
         <div class="container text-center">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Expence tracker</h2>
-                </div>
-                <div class="col-md-6">
-                    <h2>Balance</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>History</h2>
-                </div>
-                <div class="col-md-6">
-                    <h2>Income</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Add new transaction</h2>
-                </div>
-                <div class="col-md-6">
-                    <h2>Expence</h2>
-                </div>
-            </div>
+            <h3>
+                recent transactions
+            </h3>
+            <ul>
+                <li class=""></li>
+            </ul>
         </div>
     </main>
+    <footer class="filler"></footer>
 </body>
 
 </html>
