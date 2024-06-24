@@ -1,0 +1,56 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* מוסיף גם את box-sizing לכל האלמנטים */
+}
+
+html, body {
+    height: 100%; /* מאפשר ל-body להתפשט לגובה המלא */
+    display: flex;
+    flex-direction: column; /* מסדר את התוכן בצורה עמודתית */
+    justify-content: flex-start; 
+    width: 100%; 
+    overflow-x: hidden;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 60px;
+    font-size: 22px;
+}
+
+.button-login {
+    background-color: blueviolet;
+    color: white;
+    width: 95%;
+    padding: 10px; 
+    border: none; 
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.back-button {
+    border: none; /* מסיר גבולות כדי למנוע הצגת מסגרת סטנדרטית */
+    background: none; /* מסיר רקע כדי שלא יהיה רקע צבעוני או שקוף */
+    padding: 5px; /* מוסיף מעט ריווח בפנים כדי להקל על הלחיצה */
+    cursor: pointer; /* משנה את צורת הסמן לסמן קליק */
+    outline: none; /* מסיר את המסגרת שנוצרת עקב פוקוס */
+}
+
+.back-button:focus, .back-button:hover {
+    outline: none; /* מונע מסגרת במצבי פוקוס והובר */
+}
