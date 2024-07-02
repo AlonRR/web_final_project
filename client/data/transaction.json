@@ -1,0 +1,36 @@
+{
+    "transactions": [
+        {
+            "id": 1,
+            "icon": "shopping_icon",
+            "title": "Shopping",
+            "description": "I bought some clothes",
+            "amount": -100,
+            "time": "10:00"
+        },
+        {
+            "id": 2,
+            "icon": "shopping_icon",
+            "title": "Dining Out",
+            "description": "Dinner at Italian restaurant",
+            "amount": -75,
+            "time": "19:30"
+        },
+        {
+            "id": 3,
+            "icon": "shopping_icon",
+            "title": "Groceries",
+            "description": "Weekly groceries shopping",
+            "amount": -60,
+            "time": "15:00"
+        },
+        {
+            "id": 4,
+            "icon": "shopping_icon",
+            "title": "Gas",
+            "description": "Filled up the car",
+            "amount": -40,
+            "time": "20:30"
+        }
+    ]
+}
