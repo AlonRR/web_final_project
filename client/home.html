@@ -12,30 +12,28 @@
 </head>
 
 <body>
-    <header>
-        <nav class="home_nav">
-            <button class="selected" href="#">
-                <div id="home_icon"></div>
-                Home
-            </button>
-            <button href="#">
-                <div id="transaction_icon"></div>
-                Transaction
-            </button>
-            <button class="plus" href="#">
-                <div>
-                    <div id="plus_icon"></div>
-                </div>
-            </button>
-            <button href="#">
-                <div id="budget_icon"></div>Budget
-            </button>
-            <button href="#">
-                <div id="profile_icon"></div>Profile
-            </button>
-        </nav>
+    <header class="home_header">
+        <img src="images/user_image.jpg" alt="user image">
+        <div>
+            <h3>June</h3>
+        </div>
+        <div class="notification_bell_icon"></div>
     </header>
     <main>
+        <div class="balance">
+            <h3>Account Balance</h3>
+            <h1 class="balance_amount">$1000</h1>
+        </div>
+        <div class="income_expense">
+            <div>
+                <h3>Income</h3>
+                <h4>$1000</h4>
+            </div>
+            <div>
+                <h3>Expense</h3>
+                <h4>$1000</h4>
+            </div>
+        </div>
         <div class="tansactions">
             <div>
                 <h3>Recent Transactions</h3>
@@ -58,7 +56,29 @@
             </ul>
         </div>
     </main>
-    <!-- <footer class="filler"></footer> -->
+    <footer class="home_nav">
+        <nav>
+            <button class="selected" href="#">
+                <div id="home_icon"></div>
+                Home
+            </button>
+            <button href="#">
+                <div id="transaction_icon"></div>
+                Transaction
+            </button>
+            <button class="plus" href="#">
+                <div>
+                    <div id="plus_icon"></div>
+                </div>
+            </button>
+            <button href="#">
+                <div id="budget_icon"></div>Budget
+            </button>
+            <button href="#">
+                <div id="profile_icon"></div>Profile
+            </button>
+        </nav>
+    </footer>
 </body>
 
 </html>
