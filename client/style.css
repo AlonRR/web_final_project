@@ -10,7 +10,7 @@ html, body {
     display: flex;
     flex-direction: column; /* מסדר את התוכן בצורה עמודתית */
     justify-content: flex-start; 
-    width: 100%; 
+    width: 100%;
     overflow-x: hidden;
 }
 
