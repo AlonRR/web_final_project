@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Inter;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100vh;
+    margin: 20px;
+}
+
+.signup {
+    padding: 20px;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-top: 44px;
+    margin-bottom: 32px;
+}
+
+.nav-head h1 {
+    color: var(--Base-Dark-Dark-50, #212325);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.link-text {
+    display: flex;
+    justify-content: center;
+}
+
+.link-text p {
+    color: #91919F;
+}
+
+.link-log {
+    text-decoration: underline;
+    color: #7F3DFF;
+}
+
+button[type="submit"] {
+    background-color: #7F3DFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #7F3DFF;
+}
+
+
+.signup button[type="submit"] {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.new {
+    background-color: #7F3DFF;
+    justify-content: space-between;
+}
+
+.new header {
+    color: #fff;
+}
+
+.new .nav-head h1 {
+    color: #fff;
+}
+
+.new section h3 {
+    color: var(--Base-Light-Light-80, #FCFCFC);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    opacity: 0.64;
+}
+
+.new section p {
+    color: var(--Base-Light-Light-80, #FCFCFC);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.new .sec-account-1 {
+    margin: 20px;
+}
+
+.new .sec-account-2 {
+    background-color: #fff;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+
+.new button[type="submit"] {
+    margin-top: 60px;
+}
+
+.transaction_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #FCEED4; */
+    border-radius: 16px;
+    margin: 8px;
+    padding: 8px;
+    height: 80px;
+    width: calc(100% - 16px);
+}
+
+.card_icon {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCEED4;
+    border-radius: 16px;
+}
+
+.shopping_icon {
+    background-image: url('../images/shopping_icon.svg');
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+.sqare {
+    height: 100vh;
+    width: 100%;
+    background-color: #44a08d;
+}
+
+.sq2 {
+    height: 90px;
+    width: 100%;
+    background-color: #b9970f;
+}
+
+#balance {
+    font-size: 3rem;
+}
+
+.wrapper {
+    height: 100vh;
+    background-color: #7F3DFF;
+}
+
+.form-wrapper {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.banks {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+}
+
+#submit {
+    background-color: #7F3DFF;
+}
+
+.bi-arrow-left {
+    font-size: 25px;
+}
+
+.banks img {
+    margin: 10px;
+}
