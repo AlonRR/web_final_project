@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,10 +10,77 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-main{
+.cont {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: 100vh;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-top: 44px;
+    margin-bottom: 32px;
+}
+
+.nav-head h1 {
+    color: var(--Base-Dark-Dark-50, #212325);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.link-text {
+    display: flex;
+    justify-content: center;
+}
+
+.link-text p {
+    color: #91919F;
+}
+
+.link-log {
+    text-decoration: underline;
+    color: #7F3DFF;
+}
+
+button[type="submit"] {
+    background-color: #7F3DFF;
+    color: #fff;
+    border: none;
+    padding: 10px;
     width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #7F3DFF;
+}
+
+
+.signup button[type="submit"] {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .filler {
@@ -20,44 +89,79 @@ main{
     background-color: none;
 }
 
-nav {
-    position: fixed;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    height: 79px;
-    color: #7F3DFF;
-    background-color: #FCFCFC;
-    width: 100%;
-    font-size: x-small;
-    font-weight: 500;
+.home_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 
-    > button {
-        display: flex;
-        flex-direction: column;
-        border: none;
+    img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0px 0px 0px 2px #F5F5F5, 0px 0px 0px 3px #AD00FF;
+    }
+}
+
+.notification_bell_icon {
+    background-image: url('../images/notification_bell_icon.svg');
+    width: 21px;
+    height: 25px;
+}
+
+.home_nav {
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    height: 79px;
+    width: 100%;
+
+    nav {
+        position: fixed;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        color: #7F3DFF;
         background-color: #FCFCFC;
-        align-items: center;
+        font-size: x-small;
+        font-weight: 500;
+        z-index: 1000;
+        height: 79px;
         width: 100%;
 
-        &:not(.plus) {
-            justify-content: center;
+        > button {
+            display: flex;
+            flex-direction: column;
+            border: none;
+            background-color: #FCFCFC;
+            align-items: center;
+            width: 100%;
+
+            &:not(.plus) {
+                justify-content: center;
+            }
+
+            &:not(.selected) {
+                color: #C6C6C6;
+            }
+
+            &:active:not(.plus) {
+                background-color: #c6c6c647;
+            }
         }
 
-        &:not(.selected) {
-            color: #C6C6C6;
-        }
+        .selected {
+            color: #7F3DFF;
 
-        &:active:not(.plus) {
-            background-color: #c6c6c647;
-        }
-    }
-
-    .selected {
-        color: #7F3DFF;
-
-        > img {
-            fill: #7F3DFF;
+            > img {
+                fill: #7F3DFF;
+            }
         }
     }
 }
@@ -122,9 +226,8 @@ nav {
     display: flex;
     flex-direction: column;
     margin: auto;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background-color: #44a08d;
 
     > div:first-child {
         display: flex;
@@ -176,6 +279,7 @@ nav {
         margin-left: 20px;
         margin-bottom: 0px;
         padding: 0;
+        width: calc(100% - 40px);
     }
 
     li {
@@ -190,9 +294,9 @@ nav {
             flex-direction: column;
             justify-content: space-between;
             margin-left: 10px;
-            /* width: 40%; */
             height: 100%;
-            padding: 6px 0px;
+            margin-top: 6px;
+            margin-bottom: 6px;
 
             &:first-child {
                 align-items: flex-start;
