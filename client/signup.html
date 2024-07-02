@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="./style.css">
+  <script defer src="./js/signup.js"></script>
 </head>
 
 <body>
@@ -26,7 +27,7 @@
       </nav>
     </header>
     <main>
-      <form class="signupForm" onsubmit="handleSubmit(event)">
+      <form class="signupForm" id="signupForm">
         <div class="mb-3">
           <input type="text" class="form-control" id="nameInput" placeholder="Name">
         </div>
@@ -43,26 +44,6 @@
       </div>
     </main>
   </div>
-
-  <script>
-    function handleSubmit(event) {
-      event.preventDefault();
-      const name = document.getElementById('nameInput').value;
-      const email = document.getElementById('emailInput').value;
-      const password = document.getElementById('passwordInput').value;
-
-      const newUser = { name, email, password };
-      console.log('POST /users', JSON.stringify(newUser));
-      let users = localStorage.getItem('users');
-      users = users ? JSON.parse(users) : [];
-      users.push(newUser);
-      localStorage.setItem('users', JSON.stringify(users));
-
-      console.log('Users:', JSON.stringify(users));
-
-      window.location.href = 'newaccount.html';
-    }
-  </script>
 </body>
 
 </html>
